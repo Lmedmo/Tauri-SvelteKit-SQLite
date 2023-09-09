@@ -10,8 +10,6 @@ This guide will walk you through the process of integrating the primary componen
 
 ### Linux
 
----
-
 ## Step 2: Create the SvelteKit Frontend
 
 - [ ]  Using the tool of your choice, run one of the following commands
