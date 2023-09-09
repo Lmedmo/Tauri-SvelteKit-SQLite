@@ -298,7 +298,7 @@ This guide will walk you through the process of integrating the primary componen
         .expect("error while running tauri application");
     }
     ```
-- [ ]  Create a set of records in each table to test the functionality of the application. There are a number of different ways to achieve this, I chose to create a function that will perform this operation as part of the `db::init()` fn, and by commenting it out or uncommenting it when necessary *(This fn would need to be deleted* before building and deploying)*
+- [ ]  Create a set of records in each table to test the functionality of the application. There are a number of different ways to achieve this, I chose to create a function that will perform this operation as part of the `db::init()` fn, and by commenting it out or uncommenting it when necessary *(This fn would need to be deleted before building and deploying)*
     ```rust
     // Check for DB, create if non existent
     pub async fn init() {
