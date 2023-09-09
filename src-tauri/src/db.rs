@@ -16,7 +16,7 @@ pub async fn init() {
     create_schema().await;
     
     // Uncomment the fn below and run to make some records for testing
-    insert_dev_records().await;
+    // insert_dev_records().await;
 }
 
 // Create Schema
@@ -48,6 +48,7 @@ async fn create_schema() {
 }
 
 // Create some test records in each table
+#[allow(dead_code)]
 async fn insert_dev_records() {
     let pool = SqlitePool::connect(DB_URL).await.expect("unable to connect");
     let sql = "
