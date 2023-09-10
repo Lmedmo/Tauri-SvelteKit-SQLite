@@ -11,37 +11,31 @@ This guide will walk you through the process of integrating the primary componen
         Step 1: Set up environment and Install prerequisites
     </h2>
     </summary>
-    <blockquote>
-        <details>
-        <summary>
-        <h3>
-            Windows
-        </h3>
-        </summary>
-        TODO
-        </details>
-    </blockquote>
-    <blockquote>
-        <details>
-        <summary>
-        <h3>
-            MacOS
-        </h3>
-        </summary>
-        TODO
-        </details>
-    </blockquote>
-    <blockquote>
-        <details>
-        <summary>
-        <h3>
-            Linux
-        </h3>
-        </summary>
-        TODO
-        </details>
-    </blockquote>
     
+<blockquote><details><summary><h3>Windows</h3></summary>
+
+- [ ]  Install **MS Visual Studio C++ build tools** and **Windows 10 SDK**
+- [ ]  WebView2 (Most likely already installed as it is part of Win10 and Win11 by default)
+- [ ]  Install Rust from the [website](https://www.rust-lang.org/tools/install) or by running the following command
+    ```powershell
+    winget install --id Rustlang.Rustup
+    ```
+</details></blockquote>
+<blockquote><details><summary><h3>macOS</h3></summary>
+
+- [ ]  Install CLang and macOS Dev Dependencies using the following command
+    ```shell
+    xcode-select --install
+    ```
+- [ ]  Install Rust with the following command then restart your Terminal for changes to take effect
+    ```shell
+    curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh
+    ```    
+</details></blockquote>
+<blockquote><details><summary><h3>Linux</h3></summary>
+
+Use this link to [the official Tauri website](https://tauri.app/v1/guides/getting-started/prerequisites#installing) to find instructions on how to install system dependencies for your specific distro        
+</details></blockquote> 
 </details>
 
 ---
