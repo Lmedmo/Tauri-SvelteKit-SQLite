@@ -2,7 +2,8 @@
 node_modules
 /build
 /.svelte-kit
-.vscode
+Images
+/.vscode
 /package
 .env
 .env.*
@@ -12,4 +13,11 @@ package.json
 yarn.lock
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
+.eslintrc.cjs
+.eslintignore
+.gitignore
+.npmrc
+.prettierignore
+.prettierrc
+
 
