@@ -1,5 +1,6 @@
-# Overview
+![tauri-sveltekit-sqlite](https://github.com/Lmedmo/Tauri-SvelteKit-SQLite/assets/102483463/e0630e3a-eb2d-49b2-8b74-4ee653b4e10a)
 
+# Overview
 This guide will walk you through the process of integrating the primary components of a modern full stack desktop application — Frontend, Backend, and Database. Tauri which is implemented in Rust will serve as our Backend, while SvelteKit will serve as our Frontend. The database we will use is SQLite and to do this we will be using SQLx; a Rust toolkit for communicating asynchronously with a number of different databases (MySQL, MSSQL, PostgreSQL, and SQLite). We will use Tauri’s built-in capabilities to then pass information back and forth between the front and backend. The purpose of this guide is simply to share what I have learned in my journey to create cross platform applications for a number of personal and professional projects. As I continue to grow my understanding and refine techniques to build applications on top of this core architecture, I will be sure to update the project’s GitHub repository along with this guide to reflect my methodology (See the ‘Additional Enhancements’ section). I will also include helpful links to articles, documentation, examples, and eventually links to my own applications once I have gotten them ready enough to be seen and taken seriously haha. With all that said, let’s get coding!!
 
 ---
@@ -10,37 +11,31 @@ This guide will walk you through the process of integrating the primary componen
         Step 1: Set up environment and Install prerequisites
     </h2>
     </summary>
-    <blockquote>
-        <details>
-        <summary>
-        <h3>
-            Windows
-        </h3>
-        </summary>
-        TODO
-        </details>
-    </blockquote>
-    <blockquote>
-        <details>
-        <summary>
-        <h3>
-            MacOS
-        </h3>
-        </summary>
-        TODO
-        </details>
-    </blockquote>
-    <blockquote>
-        <details>
-        <summary>
-        <h3>
-            Linux
-        </h3>
-        </summary>
-        TODO
-        </details>
-    </blockquote>
     
+<blockquote><details><summary><h3>Windows</h3></summary>
+
+- [ ]  Install **MS Visual Studio C++ build tools** and **Windows 10 SDK**
+- [ ]  WebView2 (Most likely already installed as it is part of Win10 and Win11 by default)
+- [ ]  Install Rust from the [website](https://www.rust-lang.org/tools/install) or by running the following command
+    ```powershell
+    winget install --id Rustlang.Rustup
+    ```
+</details></blockquote>
+<blockquote><details><summary><h3>macOS</h3></summary>
+
+- [ ]  Install CLang and macOS Dev Dependencies using the following command
+    ```shell
+    xcode-select --install
+    ```
+- [ ]  Install Rust with the following command then restart your Terminal for changes to take effect
+    ```shell
+    curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh
+    ```    
+</details></blockquote>
+<blockquote><details><summary><h3>Linux</h3></summary>
+
+Use this link to [the official Tauri website](https://tauri.app/v1/guides/getting-started/prerequisites#installing) to find instructions on how to install system dependencies for your specific distro        
+</details></blockquote> 
 </details>
 
 ---
